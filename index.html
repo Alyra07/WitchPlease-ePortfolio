@@ -78,7 +78,7 @@
 								<h2>Witch, Please!</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<img class="image featured" src="images/pic08.jpg" alt="" />
 
 							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
 							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
@@ -106,13 +106,13 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<img class="image fit" src="images/pic02.jpg" alt="" />
 										<header>
 											<h3>Ipsum Feugiat</h3>
 										</header>
 									</article>
 									<article class="item">
-										<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+										<img class="image fit" src="images/pic03.jpg" alt="" />
 										<header>
 											<h3>Rhoncus Semper</h3>
 										</header>
@@ -120,13 +120,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<img class="image fit" src="images/pic04.jpg" alt="" />
 										<header>
 											<h3>Magna Nullam</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<img class="image fit" src="images/pic05.jpg" alt="" />
 										<header>
 											<h3>Natoque Vitae</h3>
 										</header>
@@ -134,13 +134,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<img src="images/pic06.jpg" alt="" class="image fit" />
 										<header>
 											<h3>Dolor Penatibus</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<img src="images/pic07.jpg" alt="" class="image fit" />
 										<header>
 											<h3>Orci Convallis</h3>
 										</header>
@@ -171,7 +171,7 @@
 							<div class="row">
 								<div class="col-12 col-12-mobile">
 									<article class="item">
-										<img class="image fit" src="images/class-diagram1.png" alt="Class Diagram 1" />
+										<img class="image fit clickable-image" src="images/class-diagram1.png" alt="Class Diagram 1" />
 										<header>
 											<h3>Class Diagram</h3>
 										</header>
@@ -184,6 +184,13 @@
 
 			</div>
 
+			<!-- Image Modal -->
+			<div id="imageModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="modalImage">
+				<div id="caption"></div>
+			</div>
+
 		<!-- Footer -->
 			<div id="footer">
 
@@ -194,13 +201,7 @@
 
 			</div>
 			
-			<!-- Image Modal -->
-			<div id="imageModal" class="modal">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="modalImage">
-				<div id="caption"></div>
-			</div>
-			
+
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
