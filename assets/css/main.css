@@ -2387,6 +2387,42 @@ button:active,
 	background-color: #e8edec;
 }
 
+/* Lightbox Modal */
+#main img {
+    cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	padding-top: 60px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	max-width: 90%;
+	max-height: 90vh;
+	box-shadow: 0 0 20px #fff;
+}
+
+.close {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	color: #ffffff;
+	font-size: 50px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
 /* Wide */
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -2765,38 +2801,5 @@ button:active,
 
 	#footer .copyright li:first-child {
 		margin-top: 0;
-	}
-
-	/* Lightbox Modal */
-	
-	.modal {
-		display: none;
-		position: fixed;
-		z-index: 9999;
-		padding-top: 60px;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background-color: rgba(0, 0, 0, 0.95);
-	}
-
-	.modal-content {
-		margin: auto;
-		display: block;
-		max-width: 90%;
-		max-height: 90vh;
-		box-shadow: 0 0 20px #fff;
-	}
-
-	.close {
-		position: absolute;
-		top: 30px;
-		right: 50px;
-		color: #ffffff;
-		font-size: 50px;
-		font-weight: bold;
-		cursor: pointer;
 	}
 }
