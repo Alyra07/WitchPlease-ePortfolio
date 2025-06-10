@@ -251,6 +251,10 @@ h3 {
 	font-size: 1.5em;
 }
 
+h3.sub {
+	padding-bottom: 10px;
+}
+
 header {
 	margin: 0 0 2em 0;
 }
@@ -1915,12 +1919,20 @@ article:last-child {
 /* List */
 
 ul {
-	list-style: disc;
+	display: inline-block;
+	text-align: left;
+	list-style: square;
 	padding-left: 1em;
 }
 
 ul li {
 	padding-left: 0.5em;
+}
+
+.sub-ul {
+	list-style: disc;
+	margin-bottom: 0;
+	padding-left: 2em;
 }
 
 ol {
