@@ -380,6 +380,7 @@ br.clear {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	align-items: stretch;
+	padding-bottom: 35px;
 }
 
 .row>* {
@@ -2372,6 +2373,7 @@ button:active,
 
 #main>section.one {
 	background-color: #81918E;
+	/* Intro header image */
 	background-image: url("../../images/banner.jpg");
 }
 
@@ -2387,9 +2389,18 @@ button:active,
 	background-color: #e8edec;
 }
 
+#main>section.five {
+	background-color: #f5fafa;
+}
+
+#main>section.six {
+	background-color: #ecf1f1;
+}
+
 /* Lightbox Modal */
-#main img {
-    cursor: pointer;
+
+.clickable-image {
+	cursor: pointer;
 }
 
 .modal {
@@ -2402,7 +2413,7 @@ button:active,
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: rgba(0, 0, 0, 0.685);
 }
 
 .modal-content {
