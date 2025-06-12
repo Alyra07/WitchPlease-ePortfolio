@@ -83,7 +83,7 @@
 
 				<ul class="features-ul">
 					<h3 class="sub">Key Features</h3>
-					<li>A main shop window scene where customers arrive with their requests</li>
+					<li>A main shop window scene where customers arrive with their requests and give the player tasks to enchant their unique items</li>
 					<li>Dialogue system: Four distinct customers with unique items and stories</li>
 					<li>
 						Minigames for 3-4 unique enchanting tools on the Workbench: <br />
@@ -100,7 +100,7 @@
 				</ul>
 
 
-				<ul class="features-ul">
+				<!-- <ul class="features-ul">
 					<h3 class="sub">Other Possible Features</h3>
 					<li>Dialogue interaction system with branching dialogue options</li>
 					<li>Multiple endings based on player choices</li>
@@ -108,6 +108,36 @@
 					<li>Simple progression system (e.g. day ends after all customers are served)</li>
 					<li>Reward system: Earning money from enchanting items (e.g. for unlocking new spells, tools)</li>
 					<li>Our own soundtrack</li>
+				</ul> -->
+
+				<ul class="features-ul">
+					<h3 class="sub">Implemented Features (10.06.2025)</h3>
+					<li>
+						<strong>Scenes:</strong> MainMenu, CustomerWindow, Workbench <br />
+						<ul class="sub-ul">
+							<li>MainMenu: Start game, Exit game, Settings (Volume in Unity)</li>
+							<li>CustomerWindow: A customer walks to the counter, his item can be retrieved</li>
+							<li>Workbench: Where Minigames can be played for the current customer's item</li>
+						</ul>
+					</li>
+					<li>
+						<strong>GameStateManager:</strong> To handle persistent states needed in scenes (CustomerWindow & Workbench)<br />
+						<ul class="sub-ul">
+							<li>CustomerWindowState: Keeps track of the current customer and their item</li>
+							<li>WorkbenchState: Manages the state of the enchanting minigames</li>
+							<li>CustomerTaskList: A list of tasks (currently CauldronTask) can be applied to each customer</li>
+						</ul>
+					</li>
+					<li>
+						<strong>Cauldron Task:</strong> Brew potions with correct ingredients<br />
+						<ul class="sub-ul">
+							<li>5 Ingredients: Drag & drop into the cauldron to brew a potion</li>
+							<li>3 Potion Recipes: Players must put ingredients into the cauldron in the correct order</li>
+							<li>Potion Prefab: Is instantiated after correct brewing, and can be applied to the customer's item</li>
+						</ul>
+					</li>
+					<li>Audio: Wwise project has been successfully integrated with Unity</li>
+					<li>Version Control: Unity VSC for collaboration</li>
 				</ul>
 
 			</div>
