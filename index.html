@@ -17,7 +17,7 @@
 
 			<!-- Logo -->
 			<div id="logo">
-				<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+				<span class="image avatar48"><img src="images/logo1_1.png" alt="" /></span>
 				<h1 id="title">Witch, Please!</h1>
 				<p>CCL4 Group 13</p>
 			</div>
@@ -98,7 +98,6 @@
 					<li>Visual storytelling through character design and shop atmosphere (Game Audio)</li>
 					<li>Main Menu Scene: Play / Exit game, Settings (Volume)</li>
 				</ul>
-
 
 				<!-- <ul class="features-ul">
 					<h3 class="sub">Other Possible Features</h3>
@@ -212,35 +211,39 @@
 				</header>
 
 				<h4>Main Menu Scene</h4>
-				<p>In the Main Menu, players can start the game (leads to Customer Window Scene) or exit. The scene will
-					include a background image, the title, and buttons for game interactions, and adjusting settings
-					(e.g. volume).</p>
+				<p>In the Main Menu, players can start the game (leads to Customer Window Scene) or exit. The scene will include a background image, the title, and buttons for game interactions, and adjusting settings (e.g. volume).</p>
 
 				<h4>Customer Window Scene</h4>
-				<p>In the Customer Window, players will interact with customers who arrive at the shop. Each customer
-					has a unique item and story. Players can click on the item to retrieve it and start the enchanting
-					process on the Workbench. Characters will arrive in a specific order, and players must complete
-					their requests to return the item and move on to the next customer.</p>
+				<p>In the Customer Window, players will interact with customers who arrive at the shop. Each customer has a unique item and story. Players can click on the item to retrieve it and start the enchanting process on the Workbench. Characters will arrive in a specific order, and players must complete their requests to return the item and move on to the next customer. As of 13.06.2025, the customer interactions have been enhanced with dialogues, providing a richer narrative experience.</p>
 
 				<h4>Workbench Scene</h4>
-				<p>In the Workbench scene, players will perform enchanting minigames using various tools. Each tool has
-					its own unique mechanics, such as dragging, clicking, or following patterns. Successfully enchanting
-					the item will return the player to the Customer Window.</p>
+				<p>In the Workbench scene, players perform enchanting minigames using various tools, depending on which tasks are active for the current customer. Each tool (3 in total) has its own unique mechanics, such as dragging, clicking, or following patterns. When the player is ready to return the item, the "Return Item" button can be pressed respectively - this will return the player to the Customer Window to see the customer's reaction (the customer evaluation/feedback feature is yet to be implemented).</p>
+
+				<h4>GameStateManager</h4>
+				<p>The GameStateManager is responsible for managing the overall state of the game, including the current scene (CustomerWindow & Workbench), player progress, and game settings. It ensures a smooth transition between scenes and maintains the integrity of the game states throughout the player's journey. What is new (as of 13.06.2025) is the introduction of a more modular approach to state management, especially for customer task tracking, allowing for easier updates and modifications to individual game states without affecting the entire system.</p>
 
 				<h3 class="sub">System Infrastructure</h3>
 
-				<p>The following class diagram illustrates the system architecture we have until now (10.06.2025). It
-					shows the
-					relationships between the currently existing components and their interactions. <br />
-					For a detailed view, please save the image to your local machine, since it's not displayed in full
-					resolution here
-					(CSS scaling).</p>
+				<p>The following class diagrams illustrate the system architecture we have until a certain point in time (for Assignments 1 & 2). They show the relationships between the currently existing components and their interactions. <br />
+				For a detailed view, please save the images to your local machine, since they are not displayed in full resolution here (CSS scaling).</p>
 
-				<div class="col-12 col-12-mobile">
+				<div class="col-12 col-12-mobile padding-bottom">
 					<article class="item">
 						<img class="image fit clickable-image" src="images/class-diagram1.png" alt="Class Diagram 1" />
 						<header>
 							<h3>Class Diagram (10.06.2025)</h3>
+						</header>
+					</article>
+				</div>
+
+				<p>As of 13.06.2025, we have expanded the system design to include more detailed class diagrams that reflect the current state of the game development. Since there were too many scripts and classes to fit into one class diagram, we split it in two - one for the general CustomerWindow scripts (1), and cleaning task, and the other for the Cauldron / Potion brewing task (2).</p>
+
+				<div class="col-12 col-12-mobile">
+					<article class="item">
+						<img class="image fit clickable-image" src="images/class-diagram2-1.png" alt="Class Diagram 2" />
+						<img class="image fit clickable-image" src="images/class-diagram2-2.png" alt="Class Diagram 2 continued" />
+						<header>
+							<h3>Class Diagrams (13.06.2025)</h3>
 						</header>
 					</article>
 				</div>

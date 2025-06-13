@@ -1848,6 +1848,10 @@ br.clear {
 
 /* Sections/Article */
 
+.padding-bottom {
+	padding-bottom: 2em;
+}
+
 section,
 article {
 	margin-bottom: 3em;
